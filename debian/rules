@@ -6,8 +6,11 @@ export DEB_BUILD_OPTIONS=nocheck
 	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
 
 override_dh_auto_build:
-	dh_auto_build -- -ldflags "-s -w"
-	dh_auto_build -- -tags confonly -ldflags "-s -w"
+	dh_auto_build -- v2ray.com/core/main
+	cd _build/bin && mv main v2ray
+	dh_auto_build -- v2ray.com/core/infra/control/main
+	cd _build/bin && mv main v2ctl
+	cd _build/bin && rm errorgen vprotogen
 
 override_dh_auto_install:
 	dh_auto_install -- --no-source

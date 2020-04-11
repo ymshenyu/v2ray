@@ -3,5 +3,9 @@
 %:
 	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
 
+override_dh_auto_build:
+	dh_auto_build -- -o v2ray -ldflags "-s -w"
+	dh_auto_build -- -o v2ctl -tags confonly -ldflags "-s -w"
+
 override_dh_auto_install:
 	dh_auto_install -- --no-source

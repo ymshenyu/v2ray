@@ -1,5 +1,6 @@
-core (4.23.1-1) UNRELEASED; urgency=medium
+core (4.23.1-1) focal; urgency=medium
 
   * Initial release
+  * Add missing build dependencies
 
- -- Guobang Bi <ymshenyu@gmail.com>  Sat, 11 Apr 2020 11:19:59 +0800
+ -- Guobang Bi <ymshenyu@gmail.com>  Sat, 11 Apr 2020 13:22:59 +0800

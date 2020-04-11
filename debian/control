@@ -1,0 +1,50 @@
+Source: v2ray
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Guobang Bi <ymshenyu@gmail.com>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-golang-mock-dev,
+               golang-github-google-go-cmp-dev,
+               golang-github-miekg-dns-dev,
+               golang-golang-x-crypto-dev,
+               golang-golang-x-net-dev,
+               golang-golang-x-sync-dev,
+               golang-golang-x-sys-dev,
+               golang-google-grpc-dev,
+               golang-goprotobuf-dev,
+               golang-websocket-dev
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/v2ray
+Vcs-Git: https://salsa.debian.org/go-team/packages/v2ray.git
+Homepage: https://github.com/v2ray/v2ray-core
+Rules-Requires-Root: no
+XS-Go-Import-Path: v2ray.com/core
+
+Package: v2ray
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: A platform for building proxies to bypass network restrictions. (program)
+ Project V Build Status
+ (https://dev.azure.com/v2ray/core/_build/latest?definitionId=1)
+ codecov.io (https://codecov.io/github/v2ray/v2ray-core?branch=master)
+ GoDoc (https://godoc.org/v2ray.com/core) codebeat
+ (https://codebeat.co/projects/github-com-v2ray-v2ray-core-master)
+ Downloads (https://github.com/v2ray/v2ray-core/releases/)
+ .
+ Project V is a set of network tools that help you to build your
+ own computer network. It secures your network connections and thus
+ protects your privacy. See our website (https://www.v2ray.com/)
+ for more information.  License The MIT License (MIT)
+ (https://raw.githubusercontent.com/v2ray/v2ray-core/master/LICENSE)
+ Credits This repo relies on the following third-party
+ projects: • In production: • gorilla/websocket
+ (https://github.com/gorilla/websocket)• gRPC
+ (https://google.golang.org/grpc)• For testing only:
+ • miekg/dns (https://github.com/miekg/dns)• h12w/socks
+ (https://github.com/h12w/socks)

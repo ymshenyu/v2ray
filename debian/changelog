@@ -1,3 +1,9 @@
+core (4.23.1-2) focal; urgency=medium
+
+  * update rules
+
+ -- Guobang Bi <ymshenyu@gmail.com>  Sat, 11 Apr 2020 13:34:21 +0800
+
 core (4.23.1-1) focal; urgency=medium
 
   * Initial release

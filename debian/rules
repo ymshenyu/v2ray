@@ -12,4 +12,4 @@ override_dh_auto_build:
 	cd _build/bin && mv main v2ctl
 
 override_dh_auto_install:
-	dh_auto_install -- --no-source
+

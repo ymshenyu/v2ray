@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+_build/src/v2ray.com/core _build/src/v2ray.com/

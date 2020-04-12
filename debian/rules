@@ -6,9 +6,9 @@ export DEB_BUILD_OPTIONS=nocheck
 	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
 
 override_dh_auto_build:
-	dh_auto_build -- v2ray.com/core/main
+	DH_GOPKG="v2ray.com/core/main" dh_auto_build
 	cd _build/bin && mv main v2ray
-	dh_auto_build -- v2ray.com/core/infra/control/main
+	DH_GOPKG="v2ray.com/core/infra/control/main" dh_auto_build
 	cd _build/bin && mv main v2ctl
 	cd _build/bin && rm errorgen vprotogen
 

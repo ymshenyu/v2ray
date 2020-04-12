@@ -6,7 +6,6 @@ Testsuite: autopkgtest-pkg-go
 Priority: optional
 Build-Depends: debhelper-compat (= 12),
                dh-golang,
-               dh-exec,
                golang-any,
                golang-github-golang-mock-dev,
                golang-github-google-go-cmp-dev,
